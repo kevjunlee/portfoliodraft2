@@ -1,0 +1,145 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: white;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.portrait{
+  border-radius: 50%;
+  align: center;
+}
+
+p{
+  font-family: 'Merriweather', serif;
+  font-size: 20px;
+  padding-top: 50px;
+}
+h1{
+  font-size: 50px;
+  font-family: 'Oswald', serif;
+  line-height: 1;
+  padding: 50px 0;
+  text-align: center;
+}
+nav ul{
+  list-style-type: none;
+}
+
+nav li{
+  padding-right: 40px;
+  text-decoration: none;
+  display: inline;
+  font-family: 'Oswald', serif;
+}
+
+nav a{
+  border-color: white;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover{
+  background-color: white;
+  color: black;
+  padding: 5px;
+  text-decoration: underline;
+}
+#homepage a{
+    text-decoration: none;
+    color: white;
+}
+
+#homepage a:hover{
+  background-color: white;
+  color: black;
+  padding: 5px;
+  text-decoration: underline;
+}
+
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+.skip a:focus{
+position: absolute;
+top: 0px;
+}
+
+:focus{
+border: 2px solid black;
+}
+
+footer {
+	display:block;
+	text-align: center;
+	position:fixed;
+	height:90px;
+	bottom:0;
+	right:0;
+	left:0;
+	background:white;
+}
+
+#footerlist li{
+  padding: 5%;
+  display:inline;
+}
+
+#footerlist a:hover{
+  padding-top: 20px;
+  padding-right: 1px;
+  padding-bottom: 1px;
+  padding-left: 1px;
+  border-radius: 10px;
+}
+
+.social_media{
+  height: 2em;
+}
+.container{
+  display: grid;
+  grid-template-columns: 100px 500px 100px;
+  grid-row-gap: 30px;
+  grid-template-rows: 30px auto auto auto auto auto 100px;
+  width: 100vw;
+}
+
+.nav{
+  grid-column: 1 / -1;
+  grid-row: 1 / auto;
+  background-color: black;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header{
+  background-attachment: fixed;
+  background-image: url(../images/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  height: 600px;
+  grid-column: 1 / -1;
+  grid-row: 2 / auto;
+}
+
+header p{
+  color: white;
+  font-size: 24px;
+  padding: 0 100px;
+  text-align: center;
+}
